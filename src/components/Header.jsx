@@ -27,6 +27,7 @@ const Header = ({ setDisplay }) => {
       <nav>
         <ul>
           <li><a href="/" onClick={handleClick} className="active">HOME</a></li>
+          <li><a href="/portfolio" onClick={handleClick}>PORTFOLIO</a></li>
           <li><a href="/about" onClick={handleClick}>ABOUT</a></li>
           <li><a href="/contact" onClick={handleClick}>CONTACT</a></li>
         </ul>

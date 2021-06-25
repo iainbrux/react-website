@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Contact = () => {
+const Portfolio = () => {
   return (
     <article>
-      <h2>This is the Contact page</h2>
+      <h2>This is the Portfolio page</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nulla
         iure sit recusandae. Praesentium nam ipsa consequuntur adipisci
@@ -28,4 +28,4 @@ const Contact = () => {
   )
 }
 
-export default Contact;
+export default Portfolio;

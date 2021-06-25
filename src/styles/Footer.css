@@ -1,5 +1,11 @@
+@font-face {
+  font-family: 'sf-text';
+  src: url('../fonts/sf-text.ttf');
+}
+
 footer {
   border: 1px solid black;
+  font-family: 'sf-text';
   display: flex;
   align-items: center;
   justify-content: center;

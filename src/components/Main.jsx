@@ -3,15 +3,15 @@ import '../styles/Main.css'
 import Home from './Home'
 import Contact from './Contact'
 import About from './About'
+import Portfolio from './Portfolio'
 
 const Main = ({ display }) => {
   return (
     <main>
-      <article>
-        { display === 'contact' ? <Contact /> 
-        : display === 'about' ? <About />
-        : <Home /> }
-      </article>
+      { display === 'contact' ? <Contact /> 
+      : display === 'about' ? <About />
+      : display === 'portfolio' ? <Portfolio />
+      : <Home /> } 
     </main>
   )
 }
