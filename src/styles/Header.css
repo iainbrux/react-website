@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'sf-regular';
+  src: url('../fonts/sf-regular.ttf');
+}
+
+h1,
+nav {
+  display: inline-block;
+}
+
+header {
+  width: 100%;
+  border-bottom: 1px solid black;
+  min-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'sf-regular';
+}
+
+li {
+  display: inline-block;
+  padding: 20px;
+  font-size: 20px;
+}
+
+h1 {
+  margin: 20px 20px;
+  font-size: 50px;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+  transition-duration: 0.3s;
+}
+
+a:hover {
+  color: magenta;
+  transition-duration: 0.3s
+}
+
+.pink {
+  color: magenta;
+}

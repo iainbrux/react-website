@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
+import './styles/App.css';
 
-function App() {
+const App = () => {
+  const [display, setDisplay] = useState('home');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header setDisplay={setDisplay} />
+      <Main display={display} />
+      <Footer />
     </div>
-  );
+  )
 }
 
 export default App;
