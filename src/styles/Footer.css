@@ -1,12 +1,17 @@
 @font-face {
-  font-family: 'sf-text';
-  src: url('../fonts/sf-text.ttf');
+  font-family: 'circular-light';
+  src: url('../fonts/circular-light.otf');
 }
 
 footer {
-  border: 1px solid black;
-  font-family: 'sf-text';
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 40px;
+  bottom: 0;
+}
+
+footer p {
+  color: #00ccaa;
+  font-family: 'circular-light'
 }

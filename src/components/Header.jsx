@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Nav from './Nav'
 import '../styles/Header.css'
+import darkLogo from '../img/logo.png'
+import inverseLogo from '../img/logo-inverse.png'
 
 const Header = ({ setDisplay }) => {
+
+  const [logo, setLogo] = useState(darkLogo)
 
   const removeClassName = () => {
     const active = document.querySelector('.active');
@@ -21,17 +26,18 @@ const Header = ({ setDisplay }) => {
     setDisplay(e.target.innerText.toLowerCase());
   }
 
+  const backToHome = () => {
+    setDisplay('home');
+  }
+
+  const handleMouseOver = (e) => {
+    setLogo(inverseLogo)
+  }
+
   return (
     <header>
-      <h1><span className="pink">iain</span>.biz</h1>
-      <nav>
-        <ul>
-          <li><a href="/" onClick={handleClick} className="active">HOME</a></li>
-          <li><a href="/portfolio" onClick={handleClick}>PORTFOLIO</a></li>
-          <li><a href="/about" onClick={handleClick}>ABOUT</a></li>
-          <li><a href="/contact" onClick={handleClick}>CONTACT</a></li>
-        </ul>
-      </nav>
+      <img src={logo} alt="iain.biz logo" className="logo" />
+      <Nav handleClick={handleClick} backToHome={backToHome} />
     </header>
   )
 }

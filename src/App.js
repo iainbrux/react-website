@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import './styles/App.css';
 
 const App = () => {
-  const [display, setDisplay] = useState('home');
+  const [display, setDisplay] = useState('portfolio');
 
   /* const scrollFunction = () => {
    if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {

@@ -1,31 +1,16 @@
-import React from 'react'
+import React from "react";
+import Project from "./Project";
+import "../styles/Portfolio.css";
 
 const Portfolio = () => {
   return (
     <article>
       <h2>This is the Portfolio page</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nulla
-        iure sit recusandae. Praesentium nam ipsa consequuntur adipisci
-        blanditiis, repudiandae asperiores laboriosam vitae. Explicabo
-        voluptates labore vitae assumenda temporibus. Aliquam.
-      </p>
-      <br />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nulla
-        iure sit recusandae. Praesentium nam ipsa consequuntur adipisci
-        blanditiis, repudiandae asperiores laboriosam vitae. Explicabo
-        voluptates labore vitae assumenda temporibus. Aliquam.
-      </p>
-      <br />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nulla
-        iure sit recusandae. Praesentium nam ipsa consequuntur adipisci
-        blanditiis, repudiandae asperiores laboriosam vitae. Explicabo
-        voluptates labore vitae assumenda temporibus. Aliquam.
-      </p>
+      <Project wrapper="wrapper-one" />
+      <Project wrapper="wrapper-two" />
+      <Project wrapper="wrapper-one" />
     </article>
-  )
-}
+  );
+};
 
 export default Portfolio;
