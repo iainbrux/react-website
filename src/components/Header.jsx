@@ -9,8 +9,7 @@ const Header = ({ setDisplay }) => {
   const [logo, setLogo] = useState(darkLogo)
 
   const removeClassName = () => {
-    const active = document.querySelector('.active');
-    active.classList.remove('active');
+    document.querySelector('.active').classList.remove('active');
   }
 
   const scrollToTop = () => {
@@ -28,6 +27,8 @@ const Header = ({ setDisplay }) => {
 
   const backToHome = () => {
     setDisplay('home');
+    removeClassName();
+    document.querySelector('.home').classList.add('active');
   }
 
   const handleMouseOver = (e) => {

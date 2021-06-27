@@ -8,26 +8,37 @@
   src: url('../fonts/circular-light.otf');
 }
 
-.wrapper-one div,
-.wrapper-two div {
+div.project {
+  padding: 40px 0;
+}
+
+div.wrapper-one ,
+div.wrapper-two {
   display: block;
-  position: absolute;
-  margin-top: -320px;
+  position: relative;
+  height: 350px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+div.description-left,
+div.description-right {
   width: 400px;
-  height: 180px;
+  position: absolute;
   background: rgba(17,17,17,0.95);
   box-shadow: 0px 5px 11px 2px rgba(0,0,0,0.5);
   border-radius: 20px;
   padding: 30px 20px;
+  z-index: 2;
+  margin-top: 30px;
 }
 
-.wrapper-one div {
-  margin-left: 9%;
-  left: 0;
+div.description-left {
+  margin-left: -200px;
 }
 
-.wrapper-two div {
-  margin-right: 9%;
+div.description-right {
+  margin-right: -200px;
   right: 0;
 }
 
@@ -47,13 +58,14 @@
 .wrapper-one img,
 .wrapper-two img {
   margin: 0 auto 30px auto;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
   display: block;
   box-shadow: 0px 5px 11px 2px rgba(0,0,0,0.3);
-}
-
-.wrapper-one,
-.wrapper-two {
-  width: 100%;
+  z-index: 1;
 }
 
 h2 {
