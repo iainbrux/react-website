@@ -8,6 +8,11 @@
   src: url('../fonts/circular-light.otf');
 }
 
+.blob {
+  position: absolute;
+  z-index: 1;
+}
+
 div.project {
   padding: 40px 0;
 }
@@ -55,6 +60,8 @@ div.description-right {
 .wrapper-one p,
 .wrapper-two p {
   font-family: 'circular-light';
+  position: absolute;
+  z-index: 3;
 }
 
 .wrapper-one img,
