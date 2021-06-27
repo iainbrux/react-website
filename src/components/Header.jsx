@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Nav from './Nav'
+import Nav from './composables/Nav'
 import '../styles/Header.css'
 import darkLogo from '../img/logo.png'
 import inverseLogo from '../img/logo-inverse.png'

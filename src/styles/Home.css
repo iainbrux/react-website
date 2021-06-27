@@ -27,7 +27,7 @@ h2 {
   font-size: 35px;
 }
 
-p {
+.article p {
   font-family: 'circular-medium';
   margin: 0 auto;
   text-align: center;
