@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Nav from './composables/Nav'
+import Logo from './composables/Logo'
 import '../styles/Header.css'
 import darkLogo from '../img/logo.png'
 import inverseLogo from '../img/logo-inverse.png'
@@ -35,9 +36,13 @@ const Header = ({ setDisplay }) => {
     setLogo(inverseLogo)
   }
 
+  const handleMouseOut = (e) => {
+    setLogo(darkLogo)
+  }
+
   return (
     <header>
-      <img src={logo} alt="iain.biz logo" className="logo" />
+      <Logo darkLogo={darkLogo} inverseLogo={inverseLogo} handleMouseOver={handleMouseOver} handleMouseOut={handleMouseOut} backToHome={backToHome} />
       <Nav handleClick={handleClick} backToHome={backToHome} />
     </header>
   )
