@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
+import Calculator from "./components/composables/Calculator";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles/App.css";
 import "./styles/Main.css";
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/contact" component={Contact} />
           <Route path="/about" component={About} />
           <Route path="/portfolio" component={Portfolio} />
+          <Route path="/calculator" exact component={Calculator} />
         </Switch>
         <Footer />
       </div>
