@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'circular-light';
-  src: url('../fonts/circular-light.otf');
-}
-
 footer {
   display: flex;
   align-items: center;

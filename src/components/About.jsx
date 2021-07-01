@@ -1,8 +1,9 @@
 import React from 'react'
+import '../styles/About.css'
 
 const About = () => {
   return (
-    <article>
+    <article className="about-me">
       <h2>This is the About page</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nulla

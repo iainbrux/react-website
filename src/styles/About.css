@@ -1,0 +1,9 @@
+article {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about-me p {
+  font-family: 'circular-medium';
+  text-align: center;
+}

@@ -14,3 +14,5 @@ yarn start
 - Add blog section and create Node/Express/MongoDB or DynamoDB backend
 - Create underlay parallax with moving background image akin to discord? :thinking:
 - Incorporate presentation animations on mouse scroll for portfolio
+- Rewrite components into typescript
+- Use evergreen css for styling

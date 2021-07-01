@@ -1,8 +1,30 @@
+@font-face {
+  font-family: 'circular-medium';
+  src: url('../fonts/circular-medium.otf');
+}
+
+@font-face {
+  font-family: 'circular-light';
+  src: url('../fonts/circular-light.otf');
+}
+
+@font-face {
+  font-family: 'circular-black';
+  src: url('../fonts/circular-black.otf');
+}
+
+html { 
+  background: url('../img/neon.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: rgba(17,17,17,.93);
 }
 
 ::-webkit-scrollbar {
