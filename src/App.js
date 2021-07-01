@@ -1,11 +1,16 @@
-import React, { useState } from 'react'
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
-import './styles/App.css';
+import React, { useState } from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import Contact from "./components/Contact";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./styles/App.css";
+import "./styles/Main.css";
 
 const App = () => {
-  const [display, setDisplay] = useState('home');
+  const [display, setDisplay] = useState("home");
 
   /* const scrollFunction = () => {
    if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
@@ -19,12 +24,19 @@ const App = () => {
   window.addEventListener('scroll', () => scrollFunction()) */
 
   return (
-    <div>
-      <Header setDisplay={setDisplay} />
-      <Main display={display} />
-      <Footer />
-    </div>
-  )
-}
+    <Router>
+      <div>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/about" component={About} />
+          <Route path="/portfolio" component={Portfolio} />
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
+  );
+};
 
 export default App;

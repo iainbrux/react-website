@@ -1,51 +1,56 @@
-import React, { useState } from 'react'
-import Nav from './composables/Nav'
-import Logo from './composables/Logo'
-import '../styles/Header.css'
-import darkLogo from '../img/logo.png'
-import inverseLogo from '../img/logo-inverse.png'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Nav from "./composables/Nav";
+import Logo from "./composables/Logo";
+import "../styles/Header.css";
+import darkLogo from "../img/logo.png";
+import inverseLogo from "../img/logo-inverse.png";
 
-const Header = ({ setDisplay }) => {
-
-  const [logo, setLogo] = useState(darkLogo)
+const Header = () => {
+  const [logo, setLogo] = useState(darkLogo);
 
   const removeClassName = () => {
-    document.querySelector('.active').classList.remove('active');
-  }
+    document.querySelector(".active").classList.remove("active");
+  };
 
   const scrollToTop = () => {
     document.body.scrollTop = 0; //for Safari
     document.documentElement.scrollTop = 0; //for all others
-  }
+  };
 
   const handleClick = (e) => {
-    e.preventDefault();
     removeClassName();
     scrollToTop();
-    e.target.classList.add('active')
-    setDisplay(e.target.innerText.toLowerCase());
-  }
+    e.target.classList.add("active");
+  };
 
   const backToHome = () => {
-    setDisplay('home');
     removeClassName();
-    document.querySelector('.home').classList.add('active');
-  }
+    document.querySelector(".home").classList.add("active");
+  };
 
   const handleMouseOver = (e) => {
-    setLogo(inverseLogo)
-  }
+    setLogo(inverseLogo);
+  };
 
   const handleMouseOut = (e) => {
-    setLogo(darkLogo)
-  }
+    setLogo(darkLogo);
+  };
 
   return (
     <header>
-      <Logo darkLogo={darkLogo} inverseLogo={inverseLogo} handleMouseOver={handleMouseOver} handleMouseOut={handleMouseOut} backToHome={backToHome} />
+      <Link exact to="/">
+        <Logo
+          darkLogo={darkLogo}
+          inverseLogo={inverseLogo}
+          handleMouseOver={handleMouseOver}
+          handleMouseOut={handleMouseOut}
+          backToHome={backToHome}
+        />
+      </Link>
       <Nav handleClick={handleClick} backToHome={backToHome} />
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

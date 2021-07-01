@@ -1,6 +1,4 @@
 import React from "react";
-import blob from '../../img/blob.svg'
-import blob2 from '../../img/blob2.svg'
 
 const Project = ({ wrapper, description }) => {
   /* const blobs = [blob, blob2];
