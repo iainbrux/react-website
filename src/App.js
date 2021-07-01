@@ -32,8 +32,8 @@ const App = () => {
           <Route path="/" exact component={Home} />
           <Route path="/contact" component={Contact} />
           <Route path="/about" component={About} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/calculator" exact component={Calculator} />
+          <Route path="/portfolio" exact component={Portfolio} />
+          <Route path="/portfolio/calculator" component={Calculator} />
         </Switch>
         <Footer />
       </div>

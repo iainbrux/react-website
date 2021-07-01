@@ -8,7 +8,7 @@ const Portfolio = () => {
     <main>
       <article className="portfolio">
         <h2>This is the Portfolio page</h2>
-        <Link to="/calculator">
+        <Link to="/portfolio/calculator">
           <Project wrapper="wrapper-one" description="description-left" />
         </Link>
         <Project wrapper="wrapper-two" description="description-right" />
