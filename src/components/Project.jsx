@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import FindOutMore from "./composables/FindOutMore";
 
+const loremIpsum = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nulla iure sit recusandae. Praesentium nam ipsa consequuntur adipisci blanditiis, repudiandae asperiores laboriosam vitae. Explicabo voluptates labore vitae assumenda temporibus. Aliquam."
+
 const Project = ({ wrapper, position, description, name }) => {
   return (
     <div className="project">
@@ -9,11 +11,7 @@ const Project = ({ wrapper, position, description, name }) => {
         <img src="https://via.placeholder.com/800x350" alt="" />
         <div className={position}>
           <h3>{name}</h3>
-          <p>
-            {description
-              ? description
-              : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nulla iure sit recusandae. Praesentium nam ipsa consequuntur adipisci blanditiis, repudiandae asperiores laboriosam vitae. Explicabo voluptates labore vitae assumenda temporibus. Aliquam."}
-          </p>
+          <p>{description ? description : loremIpsum}</p>
           <Link to={`/portfolio/${name.toLowerCase()}`}>
             <FindOutMore />
           </Link>
