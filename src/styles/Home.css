@@ -22,7 +22,7 @@ div.glass {
   display: block;
   min-width: 60%;
   width: 75%;
-  min-height: 450px;
+  min-height: 490px;
   color: #00ccaa;
   max-width: 75%;
   background: rgba(234, 240, 240, 0.1);
@@ -48,7 +48,7 @@ div.glass {
 }
 
 .home p {
-  font-family: 'circular-light';
+  font-family: 'circular-medium';
   margin: 5px auto;
   text-align: center;
   width: 90%;

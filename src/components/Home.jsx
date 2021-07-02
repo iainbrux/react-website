@@ -20,16 +20,19 @@ const Home = () => {
           <h3>A self-taught developer 🧑🏼‍💻</h3>
           <p>
             I've been self taught for just over a year now and I
-            specialise in <strong>JavaScript</strong> with the{" "}
-            <strong>MERN</strong> technology stack; consisting of React.js,
+            specialise in JavaScript with the{" "}
+            MERN technology stack; consisting of React.js,
             Express, MongoDB and Node.js. I'm constantly adapting and
             learning new technologies and I'm also an{" "}
-            <strong>AWS Certified Cloud Practitioner</strong>.
+            AWS Certified Cloud Practitioner.
           </p>
           <br />
           <p>
-            Here you'll be able to find my portfolio, my personal blog and how
-            to contact me.
+            I'm a pizza type of guy, and my favourite hobbies include esports, golf, cryptocurrency and pc gaming.
+          </p>
+          <br />
+          <p>
+            Here, you'll find my portfolio, a bit about me and how to get in touch with me.
           </p>
         </div>
       </article>

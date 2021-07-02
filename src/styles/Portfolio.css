@@ -17,8 +17,8 @@ div.wrapper-two {
   margin: 0 auto;
 }
 
-div.description-left,
-div.description-right {
+div.position-left,
+div.position-right {
   width: 400px;
   height: 220px;
   position: absolute;
@@ -32,13 +32,36 @@ div.description-right {
   -webkit-backdrop-filter: blur(5px); /* for safari */
 }
 
-div.description-left {
+div.position-left {
   margin-left: -280px;
 }
 
-div.description-right {
+div.position-right {
   margin-right: -280px;
   right: 0;
+}
+
+div.position-left a,
+div.position-right a {
+  text-decoration: none;
+  cursor: default;
+}
+
+.more-info-btn {
+  font-family: 'circular-light';
+  margin: 150px auto 0 auto;
+  padding: 7px 20px;
+  border: 2px solid #00ccaa;
+  border-radius: 20px;
+  color: #00ccaa;
+  width: 30%;
+  transition-duration: 0.3s;
+}
+
+.more-info-btn:hover {
+  background-color: #ff00ae;
+  transition-duration: 0.3s;
+  cursor: pointer;
 }
 
 .wrapper-one h3,
@@ -46,7 +69,7 @@ div.description-right {
   text-align: center;
   font-family: 'circular-medium';
   font-size: 30px;
-  margin-top: 0;
+  margin: 0 auto;
 }
 
 .wrapper-one p,
@@ -69,6 +92,12 @@ div.description-right {
   z-index: 1;
 }
 
+.wrapper-one button,
+.wrapper-two button {
+  margin: 0 auto;
+  position: absolute;
+}
+
 .portfolio h2 {
   padding-top: 60px;
   font-size: 40px;
@@ -78,4 +107,76 @@ div.description-right {
 
 article.portfolio {
   color: #00ccaa;
+}
+
+article.calculator h2,
+article.blog h2,
+article.sketch h2,
+article.chatroom h2 {
+  font-family: 'circular-black';
+  font-size: 35px;
+  text-align: center;
+}
+
+article.calculator,
+article.blog,
+article.sketch,
+article.chatroom {
+  padding-top: 5%;
+  color: #00ccaa;
+}
+
+ul.project-nav {
+  margin-top: 340px;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'circular-medium';
+}
+
+.project-nav li {
+  border: 2px solid #00ccaa;
+  border-radius: 30px;
+  padding: 10px 25px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00ccaa;
+  transition-duration: 0.3s;
+}
+
+.project-nav li:hover {
+  background-color: #ff00ae;
+  transition-duration: 0.3s;
+}
+
+.project-nav a {
+  text-decoration: none;
+}
+
+.project-nav li img {
+  width: 22px;
+  margin-left: 12px;
+  display: inline-block;
+}
+
+.project-nav li img.go-back {
+  width: 25px;
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 12px;
+}
+
+div.more-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}
+
+.more-info img.go-forward {
+  width: 20px;
+  padding-left: 110px;
 }
