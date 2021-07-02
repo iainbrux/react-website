@@ -1,7 +1,6 @@
 import React from "react";
-// import portrait from "../img/head.jpg";
-import "../styles/Home.css";
-// import blob1 from "../img/blob1.png";
+import memoji from "../img/memoji.png";
+import '../styles/Home.css'
 
 const Home = () => {
   // Moving blobs - to be implemented as a later feature for parallax
@@ -15,19 +14,16 @@ const Home = () => {
   return (
     <main>
       <article className="home">
-        {/* <img src={portrait} alt="A self portrait of Iain" className="headshot" /> */}
-        {/* <img src={blob1} alt="" className="blobs" /> */}
         <div className="glass">
-          <h2>Hello there, I'm Iain.</h2>
-          <h3>And I'm a self-taught software developer.</h3>
-          <p className="p1">That caught your attention didn't it? 😅</p>
-          <br />
+          <img src={memoji} alt="A self portrait of Iain" className="headshot" />
+          <h2>Hello, I'm Iain 👋🏼</h2>
+          <h3>A self-taught developer 🧑🏼‍💻</h3>
           <p>
-            I've been a self taught developer now for just over a year. I
+            I've been self taught for just over a year now and I
             specialise in <strong>JavaScript</strong> with the{" "}
-            <strong>MERN</strong> technology stack consisting of React.js,
-            Express, MongoDB and Node.js but I'm constantly adapting and
-            learning new technologies. I'm also an{" "}
+            <strong>MERN</strong> technology stack; consisting of React.js,
+            Express, MongoDB and Node.js. I'm constantly adapting and
+            learning new technologies and I'm also an{" "}
             <strong>AWS Certified Cloud Practitioner</strong>.
           </p>
           <br />
